@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.galleta{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.galleta div{
+    background-image: url('../public/images/rectangle1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    text-align: center;
+}
+.galleta p{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+button{
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+@media(max-width:760px){
+    .galleta{
+        width: 100%;
+    }
+    .galleta div{
+        width: 90%;
+    }
+}
